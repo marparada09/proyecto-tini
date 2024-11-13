@@ -1,0 +1,19 @@
+
+.container{
+  margin: auto;
+}
+#paracentrar, h1 {
+ font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+ 
+}
+ h2, p {
+  font-family: "Crimson Text", serif;
+  font-style: normal;
+}
+
+.iframe{
+    max-width: 800px;
+}

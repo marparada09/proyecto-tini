@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <img src="/MS.jpeg" alt="Logo" height="50px" width="50px" class="loguito">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/home']">Martina Secret</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/productos']">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/ofertas']">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/quienessomos']">Quiénes Somos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <li>
+        <a [routerLink]="['/carrito']">
+          <i class="bi bi-cart"></i>
+          <span *ngIf="cantidadProductos > 0">
+            ({{ cantidadProductos }})
+          </span>
+        </a>
+      </li>
+    </div>
+  </div>
+</nav>
